@@ -7,7 +7,7 @@ const path = require('path');
 
 function createDriver() {
     // Use chromedriver that comes with nwjs
-    const service = new chrome.ServiceBuilder(path.join(path.dirname(require.resolve('nw')), 'nwjs', 'chromedriver')).build();
+    const service = new chrome.ServiceBuilder(path.join(path.dirname(require.resolve('nw-sdk')), 'nwjs', 'chromedriver')).build();
     chrome.setDefaultService(service);
 
     // Point chromedriver to the nwjs app
